@@ -557,17 +557,18 @@ main {
 }
 
 .tech-item:hover {
-    background-color: #012b41 !important;
-    border-color: #f77010 !important;
+    background-color: #f0f0f0;
+    border-color: #f77010;
     transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .tech-item:hover h4 {
-    color: white !important;
+    color: #012b41;
 }
 
 .tech-item:hover p {
-    color: white !important;
+    color: #666;
 }
 
 .tech-item h4 {
@@ -596,15 +597,16 @@ footer {
 }
 
 .footer-section h3 {
-    color: white;
+    color: #f77010;
     margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .footer-section p {
     color: #ccc;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    font-size: 0.9rem;
 }
 
 .footer-social {
@@ -644,6 +646,7 @@ footer {
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 0.9rem;
 }
 
 .footer-links a:hover {
@@ -673,7 +676,7 @@ footer {
 .footer-bottom p {
     margin: 0;
     color: #ccc;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .footer-bottom a {

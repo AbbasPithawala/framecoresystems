@@ -3,129 +3,640 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framecore Systems - IT Services</title>
+    <title>Framecore Systems - Modern IT Solutions & Services</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html">Framecore Systems</a>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">What we offer</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Header -->
+    <header id="page-header" class="page-header header-01 dark-logo-version header-sticky-dark-logo">
+        <div class="page-header-place-holder"></div>
+        <div id="page-header-inner" class="page-header-inner" data-sticky="1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="header-wrap">
+                            <!-- Logo -->
+                            <div class="branding">
+                                <div class="branding__logo">
+                                    <a href="index.html" rel="home">
+                                        <img src="https://via.placeholder.com/160x47/086ad8/ffffff?text=Framecore" alt="Framecore Systems" class="dark-logo">
+                                    </a>
+                                </div>
+                            </div>
 
-    <main>
-        <section id="hero">
-            <h1>Innovative IT Solutions for a Digital World</h1>
-            <p>We build amazing web, software, and mobile applications.</p>
-            <a href="contact.html" class="cta-button">Get in Touch</a>
-        </section>
+                            <!-- Navigation -->
+                            <div id="page-navigation" class="navigation page-navigation">
+                                <nav id="menu" class="menu menu--primary">
+                                    <ul id="menu-primary" class="menu__container">
+                                        <li class="menu-item current-menu-item">
+                                            <a href="index.html">
+                                                <div class="menu-item-wrap">
+                                                    <span class="menu-item-title">Home</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="about.html" class="has-submenu">
+                                                <div class="menu-item-wrap">
+                                                    <span class="menu-item-title">Company</span>
+                                                    <span class="toggle-sub-menu"></span>
+                                                </div>
+                                                <span class="sub-arrow"></span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="about.html" class="has-submenu">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">About us</span>
+                                                            <span class="toggle-sub-menu"></span>
+                                                        </div>
+                                                        <span class="sub-arrow"></span>
+                                                    </a>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item">
+                                                            <a href="about.html">
+                                                                <div class="menu-item-wrap">
+                                                                    <span class="menu-item-title">About us 01</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="about.html">
+                                                                <div class="menu-item-wrap">
+                                                                    <span class="menu-item-title">About us 02</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="contact.html">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Contact us</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Leadership</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Why choose us</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Our history</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">FAQs</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Careers</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="#">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Pricing plans</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="services.html" class="has-submenu">
+                                                <div class="menu-item-wrap">
+                                                    <span class="menu-item-title">IT solutions</span>
+                                                    <span class="toggle-sub-menu"></span>
+                                                </div>
+                                                <span class="sub-arrow"></span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item">
+                                                    <a href="services.html">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">IT Services</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="services.html">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Managed IT Services</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="services.html">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Industries</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="services.html">
+                                                        <div class="menu-item-wrap">
+                                                            <span class="menu-item-title">Business solution</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="portfolio.html">
+                                                <div class="menu-item-wrap">
+                                                    <span class="menu-item-title">Portfolio</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="contact.html">
+                                                <div class="menu-item-wrap">
+                                                    <span class="menu-item-title">Contact</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
 
-        <section id="services-preview">
-            <h2>Our Services</h2>
-            <div class="services-container">
-                <div class="service-item">
-                    <i class="fas fa-code fa-3x mb-3" style="color: #f77010;"></i>
-                    <h3>Web Development</h3>
-                    <p>Creating powerful and scalable web applications tailored to your business needs.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-laptop-code fa-3x mb-3" style="color: #f77010;"></i>
-                    <h3>Software Development</h3>
-                    <p>Custom software solutions to streamline your operations and drive growth.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-mobile-alt fa-3x mb-3" style="color: #f77010;"></i>
-                    <h3>Mobile Application Development</h3>
-                    <p>Engaging and intuitive mobile apps for iOS and Android platforms.</p>
-                </div>
-            </div>
-            <div class="see-more">
-                <a href="services.html">See all services</a>
-            </div>
-        </section>
-    </main>
+                            <!-- Header Right -->
+                            <div class="header-right">
+                                <div id="header-right-inner" class="header-right-inner">
+                                    <!-- Language Switcher -->
+                                    <div id="switcher-language-wrapper" class="switcher-language-wrapper">
+                                        <div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown">
+                                            <ul>
+                                                <li tabindex="0" class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown">
+                                                    <a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle">
+                                                        <img class="wpml-ls-flag" src="https://flagcdn.com/w20/gb.png" alt="en" title="English">
+                                                        <span class="wpml-ls-native">ENGLISH</span>
+                                                        <i class="fas fa-chevron-down"></i>
+                                                    </a>
+                                                    <ul class="wpml-ls-sub-menu">
+                                                        <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fr">
+                                                            <a href="#" class="wpml-ls-link">
+                                                                <img class="wpml-ls-flag" src="https://flagcdn.com/w20/fr.png" alt="fr" title="Français">
+                                                                <span class="wpml-ls-native">Français</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-de wpml-ls-last-item">
+                                                            <a href="#" class="wpml-ls-link">
+                                                                <img class="wpml-ls-flag" src="https://flagcdn.com/w20/de.png" alt="de" title="Deutsch">
+                                                                <span class="wpml-ls-native">Deutsch</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Search Form -->
+                                    <div class="header-search-form">
+                                        <form role="search" method="get" class="search-form" action="#">
+                                            <label>
+                                                <input type="search" class="search-field" placeholder="Search…" value="" name="s" title="Search for:">
+                                            </label>
+                                            <button type="submit" class="search-submit">
+                                                <i class="fas fa-search search-btn-icon"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Framecore Systems</h3>
-                <p>Your trusted partner in digital transformation. We deliver innovative IT solutions that drive business growth and success.</p>
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Services</h3>
-                <ul class="footer-links">
-                    <li><a href="services.html#web-dev">Web Development</a></li>
-                    <li><a href="services.html#software-dev">Software Development</a></li>
-                    <li><a href="services.html#mobile-dev">Mobile Apps</a></li>
-                    <li><a href="services.html#crm">CRM Systems</a></li>
-                    <li><a href="services.html#erp">ERP Solutions</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@framecoresystems.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+1 (555) 123-4567</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>123 Tech Street, Digital City, TC 12345</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-clock"></i>
-                    <span>Mon-Fri: 9AM-6PM</span>
+                                <!-- Mobile Menu Toggle -->
+                                <div id="page-open-mobile-menu" class="page-open-mobile-menu">
+                                    <div class="inner">
+                                        <div class="icon"><i></i></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- More Options -->
+                                <div id="header-right-more" class="header-right-more">
+                                    <div class="inner">
+                                        <div class="icon"><i class="far fa-ellipsis-h-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2024 Framecore Systems. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Innovation in Technology</span>
+                    </div>
+                    <h1 class="hero-title">Make your life easier with help from <mark>Framecore</mark></h1>
+                    <p class="hero-description">Team up with the best collaboration from the right expertise. We deliver cutting-edge IT solutions that drive your business forward.</p>
+                    
+                    <div class="hero-form">
+                        <form class="consultation-form">
+                            <div class="form-row">
+                                <input type="email" placeholder="Enter your email" required>
+                                <select required>
+                                    <option value="">Your inquiry about</option>
+                                    <option value="general">General Information</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="software">Software Development</option>
+                                    <option value="mobile">Mobile Applications</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Get a free consultation
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <img src="home-reputable-success.png" alt="Modern IT Solutions">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-text">
+                <p>Step forward to become one of <strong>49,494</strong> successful clients of Framecore and get in the front line for the most wonderful presentation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients-section">
+        <div class="container">
+            <div class="swiper clients-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide client-slide">
+                        <div class="client-logo">
+                            <img src="https://via.placeholder.com/150x60/086ad8/ffffff?text=Client+1" alt="Client 1">
+                        </div>
+                    </div>
+                    <div class="swiper-slide client-slide">
+                        <div class="client-logo">
+                            <img src="https://via.placeholder.com/150x60/086ad8/ffffff?text=Client+2" alt="Client 2">
+                        </div>
+                    </div>
+                    <div class="swiper-slide client-slide">
+                        <div class="client-logo">
+                            <img src="https://via.placeholder.com/150x60/086ad8/ffffff?text=Client+3" alt="Client 3">
+                        </div>
+                    </div>
+                    <div class="swiper-slide client-slide">
+                        <div class="client-logo">
+                            <img src="https://via.placeholder.com/150x60/086ad8/ffffff?text=Client+4" alt="Client 4">
+                        </div>
+                    </div>
+                    <div class="swiper-slide client-slide">
+                        <div class="client-logo">
+                            <img src="https://via.placeholder.com/150x60/086ad8/ffffff?text=Client+5" alt="Client 5">
+                        </div>
+                    </div>
+                    <div class="swiper-slide client-slide">
+                        <div class="client-logo">
+                            <img src="https://via.placeholder.com/150x60/086ad8/ffffff?text=Client+6" alt="Client 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=450&fit=crop" alt="Team Collaboration">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-quote">You know you did right when all your effort started to pay off in an unexpected and impressive way. @Framecore brings clients and businesses together in a fair play field.</h3>
+                    <div class="about-author">
+                        <h4>Sarah Johnson</h4>
+                        <p>/ Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="counter-grid">
+                <div class="counter-item">
+                    <div class="counter-icon">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <div class="counter-content">
+                        <div class="counter-number" data-target="1790">0</div>
+                        <h5 class="counter-label">Happy clients</h5>
+                    </div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <div class="counter-content">
+                        <div class="counter-number" data-target="920">0</div>
+                        <h5 class="counter-label">Finished projects</h5>
+                    </div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="counter-content">
+                        <div class="counter-number" data-target="245">0</div>
+                        <h5 class="counter-label">Experienced experts</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">No shortage in resources & initiatives in <mark>Technology Aid</mark></h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://via.placeholder.com/100x104/086ad8/ffffff?text=IT" alt="IT Design">
+                    </div>
+                    <h4 class="service-title">IT Design</h4>
+                    <p class="service-description">We provide the most responsive and functional IT design for companies and businesses worldwide.</p>
+                    <a href="services.html" class="service-link">
+                        Learn more
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://via.placeholder.com/100x104/086ad8/ffffff?text=MGMT" alt="IT Management">
+                    </div>
+                    <h4 class="service-title">IT Management</h4>
+                    <p class="service-description">It's possible to simultaneously manage and transform information from one server to another.</p>
+                    <a href="services.html" class="service-link">
+                        Learn more
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://via.placeholder.com/100x104/086ad8/ffffff?text=SEC" alt="Data Security">
+                    </div>
+                    <h4 class="service-title">Data Security</h4>
+                    <p class="service-description">Back up your database, store in a safe and secure place while still maintaining its accessibility.</p>
+                    <a href="services.html" class="service-link">
+                        Learn more
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://via.placeholder.com/100x104/086ad8/ffffff?text=INFRA" alt="Infrastructure">
+                    </div>
+                    <h4 class="service-title">Infrastructure Plan</h4>
+                    <p class="service-description">Framecore takes into account all conditions and budgets needed for building infrastructure plan.</p>
+                    <a href="services.html" class="service-link">
+                        Learn more
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://via.placeholder.com/100x104/086ad8/ffffff?text=FW" alt="Firewall">
+                    </div>
+                    <h4 class="service-title">Firewall Advancement</h4>
+                    <p class="service-description">Enhancing the strength and security of firewalls to protect online data from possible malicious sources.</p>
+                    <a href="services.html" class="service-link">
+                        Learn more
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://via.placeholder.com/100x104/086ad8/ffffff?text=DESK" alt="Desktop">
+                    </div>
+                    <h4 class="service-title">Desktop Computing</h4>
+                    <p class="service-description">Programming is taken care of by our experienced and professional specialist in IT management.</p>
+                    <a href="services.html" class="service-link">
+                        Learn more
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cta-box">
+                <div class="cta-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="cta-content">
+                    <h3>Cheers to the work that comes from trusted service providers in time.</h3>
+                </div>
+                <div class="cta-button">
+                    <a href="contact.html" class="btn btn-primary">Let's talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How we claim to excel?</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-box feature-box-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="feature-number">01</div>
+                    <h4 class="feature-title">Prompt help</h4>
+                    <p class="feature-description">We give prompt help desk answer right when receiving the request from customers.</p>
+                </div>
+                
+                <div class="feature-box feature-box-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="feature-number">02</div>
+                    <h4 class="feature-title">Sound advice</h4>
+                    <p class="feature-description">Knowledge come with age and time. Our experts make sure it works.</p>
+                </div>
+                
+                <div class="feature-box feature-box-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-number">03</div>
+                    <h4 class="feature-title">Zero risk</h4>
+                    <p class="feature-description">No risking factors are present and we have all kinds of measures to protect against losses.</p>
+                </div>
+                
+                <div class="feature-box feature-box-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="feature-number">04</div>
+                    <h4 class="feature-title">Tech savvy</h4>
+                    <p class="feature-description">Technological wise plans are made for addressing all kinds of requests and demands.</p>
+                </div>
+                
+                <div class="feature-box feature-box-5">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="feature-number">05</div>
+                    <h4 class="feature-title">Satisfied</h4>
+                    <p class="feature-description">100% of our current and recurring customers feel satisfied with the final results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section">
+        <div class="container">
+            <div class="contact-cta-content">
+                <div class="contact-cta-text">
+                    <h3>To make your claim, contact us on given social platforms.</h3>
+                    <p>Timing is just right when you're ready!<br>Solutions won't take more than 24 hours to be delivered and proceeded.</p>
+                </div>
+                <div class="contact-cta-info">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Call for advice now!</h4>
+                    <h3 class="contact-phone"><a href="tel:+1234567890">+1 (234) 567-890</a></h3>
+                    <a href="contact.html" class="btn btn-white">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-about">
+                    <h3 class="footer-title">Company</h3>
+                    <p>58 Howard Street #2<br>San Francisco, CA 941</p>
+                    <p><a href="mailto:contact@framecoresystems.com">contact@framecoresystems.com</a></p>
+                    <p><a href="tel:+1234567890">(+1) 234 567 890</a></p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">IT Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Managed IT</a></li>
+                        <li><a href="services.html">IT Support</a></li>
+                        <li><a href="services.html">IT Consultancy</a></li>
+                        <li><a href="services.html">Cloud Computing</a></li>
+                        <li><a href="services.html">Cyber Security</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Forum Support</a></li>
+                        <li><a href="#">Help & FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="services.html">Pricing and plans</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <i class="fas fa-cube"></i>
+                        Framecore Systems
+                    </a>
+                </div>
+                <p>&copy; 2024 Framecore Systems. All Rights Reserved</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
